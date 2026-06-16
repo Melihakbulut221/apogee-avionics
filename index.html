@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apogee Avionics — Flight-Ready CubeSat Hardware & PCB Design</title>
+  <meta name="description" content="Custom CubeSat avionics, flight-ready PCB design, and subsystem hardware. From schematic to integrated board — EPS, OBC, ADCS, payload interfaces. Fast quotes, worldwide shipping." />
+  <meta name="theme-color" content="#0b1020" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Apogee Avionics — CubeSat Hardware & PCB Design" />
+  <meta property="og:description" content="Flight-ready CubeSat avionics and custom PCB design. Get a quote in 24 hours." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="Apogee Avionics home">
+        <svg class="brand__mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M16 4 L16 28 M4 16 L28 16" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          <circle cx="16" cy="16" r="4" fill="currentColor"/>
+          <circle cx="26" cy="9" r="2" fill="currentColor"/>
+        </svg>
+        <span class="brand__name">Apogee<span class="brand__name--accent">Avionics</span></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#products">Hardware</a>
+        <a href="#process">Process</a>
+        <a href="#why">Why Us</a>
+        <a class="btn btn--ghost btn--sm" href="#contact">Get a Quote</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <p class="eyebrow">CubeSat Avionics &middot; Custom PCB Design &middot; Flight Hardware</p>
+      <h1 class="hero__title">
+        Flight-ready CubeSat hardware,<br />
+        <span class="grad">designed and built to spec.</span>
+      </h1>
+      <p class="hero__lead">
+        From a napkin sketch to an integrated, test-ready board. We design and deliver
+        custom avionics and PCBs for 1U&ndash;12U CubeSats &mdash; power, command &amp; data
+        handling, attitude control, and payload interfaces. Send us your mission, get a
+        quote in 24 hours.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#contact">Start your project</a>
+        <a class="btn btn--ghost" href="#products">Browse hardware</a>
+      </div>
+      <ul class="hero__stats">
+        <li><strong>24h</strong><span>Quote turnaround</span></li>
+        <li><strong>1U&ndash;12U</strong><span>Form factors supported</span></li>
+        <li><strong>Worldwide</strong><span>Shipping &amp; support</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <section class="trustbar">
+    <div class="container trustbar__inner">
+      <span>Built around open standards</span>
+      <div class="trustbar__items">
+        <span>CubeSat Design Spec (CDS)</span>
+        <span>PC/104 &amp; stackable headers</span>
+        <span>IPC-2221 / IPC-A-610</span>
+        <span>I&sup2;C &middot; SPI &middot; CAN &middot; UART</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">What we do</p>
+        <h2>Engineering services, end to end</h2>
+        <p class="section__sub">You bring the mission requirements. We handle the electronics &mdash; from architecture to a board you can integrate and fly.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card__icon">⚡</div>
+          <h3>Custom PCB Design</h3>
+          <p>Schematic capture, multi-layer layout, signal &amp; power integrity, and DFM-ready Gerbers. We design to IPC standards and your mechanical envelope.</p>
+          <ul class="ticks">
+            <li>2&ndash;12 layer boards</li>
+            <li>High-density &amp; flex-rigid</li>
+            <li>Full fabrication package</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">🛰️</div>
+          <h3>CubeSat Avionics</h3>
+          <p>Complete subsystem boards designed for the space environment &mdash; mechanically and electrically compatible with standard CubeSat stacks.</p>
+          <ul class="ticks">
+            <li>EPS, OBC, ADCS, comms</li>
+            <li>PC/104 stack-compatible</li>
+            <li>Payload interface boards</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">🔧</div>
+          <h3>Assembly &amp; Bring-Up</h3>
+          <p>Prototype assembly, firmware bring-up support, and functional test. We hand you a board that powers on and talks to the bus on day one.</p>
+          <ul class="ticks">
+            <li>Prototype &amp; small-batch</li>
+            <li>Functional test reports</li>
+            <li>Firmware bring-up support</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">📐</div>
+          <h3>Design Review &amp; Rework</h3>
+          <p>Have an existing design? We review schematics and layout, find the failure modes, and deliver a respin that works.</p>
+          <ul class="ticks">
+            <li>Schematic &amp; layout audit</li>
+            <li>EMC &amp; thermal review</li>
+            <li>Respin &amp; optimization</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS / HARDWARE ===== -->
+  <section class="section section--alt" id="products">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Hardware catalog</p>
+        <h2>CubeSat subsystem boards</h2>
+        <p class="section__sub">Reference designs we build, customize, and deliver. Every board is tailored to your mission &mdash; pricing is per-project, requested through a quote.</p>
+      </div>
+
+      <div class="products">
+        <article class="product">
+          <div class="product__tag">EPS</div>
+          <h3>Electrical Power System</h3>
+          <p>MPPT solar input, battery management, regulated 3.3V/5V/12V rails, and per-channel current monitoring with latch-off protection.</p>
+          <div class="product__meta">
+            <span>PC/104</span><span>I&sup2;C telemetry</span><span>Configurable rails</span>
+          </div>
+          <a class="product__cta" href="#contact">Request a quote &rarr;</a>
+        </article>
+
+        <article class="product">
+          <div class="product__tag">OBC</div>
+          <h3>On-Board Computer</h3>
+          <p>Low-power MCU/SoC, redundant non-volatile storage, watchdog, RTC, and a full set of bus interfaces for command &amp; data handling.</p>
+          <div class="product__meta">
+            <span>SPI/I&sup2;C/UART/CAN</span><span>Watchdog</span><span>Flash + FRAM</span>
+          </div>
+          <a class="product__cta" href="#contact">Request a quote &rarr;</a>
+        </article>
+
+        <article class="product">
+          <div class="product__tag">ADCS</div>
+          <h3>Attitude Determination &amp; Control</h3>
+          <p>IMU, sun sensors, magnetometer, and magnetorquer/reaction-wheel drivers on a single stackable board for pointing and detumble.</p>
+          <div class="product__meta">
+            <span>9-DoF IMU</span><span>Torquer drivers</span><span>Sensor fusion ready</span>
+          </div>
+          <a class="product__cta" href="#contact">Request a quote &rarr;</a>
+        </article>
+
+        <article class="product">
+          <div class="product__tag">COMMS</div>
+          <h3>UHF/VHF Transceiver Board</h3>
+          <p>Half-duplex radio front-end with TNC interface, designed for amateur and licensed CubeSat downlink/uplink. Antenna deployment driver optional.</p>
+          <div class="product__meta">
+            <span>UHF/VHF</span><span>Deploy driver</span><span>Beacon ready</span>
+          </div>
+          <a class="product__cta" href="#contact">Request a quote &rarr;</a>
+        </article>
+
+        <article class="product">
+          <div class="product__tag">PAYLOAD</div>
+          <h3>Payload Interface Board</h3>
+          <p>Carrier and breakout board to integrate cameras, sensors, or experiments into the stack with clean power and data isolation.</p>
+          <div class="product__meta">
+            <span>Custom connectors</span><span>Isolated rails</span><span>FPGA option</span>
+          </div>
+          <a class="product__cta" href="#contact">Request a quote &rarr;</a>
+        </article>
+
+        <article class="product">
+          <div class="product__tag">STRUCTURE</div>
+          <h3>Backplane &amp; Harness Kit</h3>
+          <p>Stack backplane, inter-board harnessing, and a motherboard that ties your subsystems together to the CubeSat Design Spec.</p>
+          <div class="product__meta">
+            <span>PC/104 stack</span><span>CDS compliant</span><span>Custom pinout</span>
+          </div>
+          <a class="product__cta" href="#contact">Request a quote &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">How it works</p>
+        <h2>From requirements to flight hardware</h2>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <div class="step__num">01</div>
+          <h3>Tell us the mission</h3>
+          <p>Send your requirements &mdash; form factor, power budget, interfaces, payload. A short call or email is enough to get started.</p>
+        </li>
+        <li class="step">
+          <div class="step__num">02</div>
+          <h3>Quote &amp; architecture</h3>
+          <p>Within 24 hours you get a fixed-scope quote, a block diagram, and a timeline. No surprises, no hourly creep.</p>
+        </li>
+        <li class="step">
+          <div class="step__num">03</div>
+          <h3>Design &amp; review</h3>
+          <p>Schematic and layout with milestone reviews. You see and approve the design before anything is fabricated.</p>
+        </li>
+        <li class="step">
+          <div class="step__num">04</div>
+          <h3>Build, test, deliver</h3>
+          <p>Fabrication, assembly, and functional test. You receive the board, the full design package, and a test report.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="section section--alt" id="why">
+    <div class="container why">
+      <div class="why__copy">
+        <p class="eyebrow">Why teams choose us</p>
+        <h2>Specialist focus, fast turnaround, honest pricing</h2>
+        <p class="section__sub">We do one thing: electronics for small satellites. That focus means you get hardware that fits the stack and the schedule.</p>
+        <ul class="features">
+          <li><strong>Space-aware design.</strong> Derating, single-event mitigation, and thermal margins baked in from the schematic.</li>
+          <li><strong>Standards-compliant.</strong> CubeSat Design Spec mechanics, PC/104 stack, IPC-class workmanship.</li>
+          <li><strong>Fixed-scope quotes.</strong> You know the price and timeline before work starts.</li>
+          <li><strong>Full ownership.</strong> You get the source design files &mdash; no lock-in.</li>
+        </ul>
+      </div>
+      <aside class="why__panel">
+        <div class="why__stat"><strong>24h</strong><span>Typical quote turnaround</span></div>
+        <div class="why__stat"><strong>2&ndash;6 wk</strong><span>Prototype lead time</span></div>
+        <div class="why__stat"><strong>100%</strong><span>Design files delivered to you</span></div>
+        <div class="why__stat"><strong>USD</strong><span>Invoiced &amp; quoted in dollars</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container contact">
+      <div class="contact__copy">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Tell us about your CubeSat</h2>
+        <p class="section__sub">Describe your mission and we&rsquo;ll reply within one business day with next steps and a quote. No obligation.</p>
+        <ul class="contact__direct">
+          <li>
+            <span class="contact__label">Email</span>
+            <a id="emailLink" href="mailto:hello@example.com?subject=CubeSat%20project%20inquiry">hello@example.com</a>
+          </li>
+          <li>
+            <span class="contact__label">Response time</span>
+            <span>Within 1 business day</span>
+          </li>
+          <li>
+            <span class="contact__label">Service area</span>
+            <span>Remote engagements worldwide</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form" id="quoteForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+        <div class="field">
+          <label for="org">Company / University <span class="opt">(optional)</span></label>
+          <input id="org" name="organization" type="text" autocomplete="organization" />
+        </div>
+        <div class="field field--row">
+          <div>
+            <label for="form-factor">Form factor</label>
+            <select id="form-factor" name="form_factor">
+              <option>1U</option><option>2U</option><option>3U</option>
+              <option>6U</option><option>12U</option><option>Not sure yet</option>
+            </select>
+          </div>
+          <div>
+            <label for="subsystem">Subsystem of interest</label>
+            <select id="subsystem" name="subsystem">
+              <option>Full avionics stack</option>
+              <option>EPS — Power</option>
+              <option>OBC — Computer</option>
+              <option>ADCS — Attitude control</option>
+              <option>Comms</option>
+              <option>Payload interface</option>
+              <option>Custom PCB (other)</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" rows="5" placeholder="Mission, power budget, interfaces, timeline, target launch…" required></textarea>
+        </div>
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn--primary btn--block" type="submit">Send inquiry</button>
+        <p class="form__note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__name">Apogee<span class="brand__name--accent">Avionics</span></span>
+        <p>Flight-ready CubeSat hardware &amp; custom PCB design.</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#services">Services</a>
+        <a href="#products">Hardware</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer__legal">&copy; <span id="year"></span> Apogee Avionics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
