@@ -2,7 +2,7 @@
 const CONTACT_EMAIL = "melihakbulut92@gmail.com"; // <-- change to your email
 // Optional: paste your Calendly (or other scheduling) link to show a "Book a call"
 // button in the contact section. Leave empty to hide it.
-const BOOKING_URL = ""; // e.g. "https://calendly.com/your-name/intro-call"
+const BOOKING_URL = "https://calendly.com/melihakbulut92/30min"; // e.g. "https://calendly.com/your-name/intro-call"
 
 // ===== Year =====
 document.getElementById("year").textContent = new Date().getFullYear();
