@@ -1,5 +1,5 @@
 // ===== Config: set these to your real contact details =====
-const CONTACT_EMAIL = "hello@example.com"; // <-- change to your email
+const CONTACT_EMAIL = "melihakbulut92@gmail.com"; // <-- change to your email
 
 // ===== Year =====
 document.getElementById("year").textContent = new Date().getFullYear();
