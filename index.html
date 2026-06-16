@@ -5,18 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Apogee Avionics — Flight-Ready CubeSat Hardware & PCB Design</title>
   <meta name="description" content="Custom CubeSat avionics, flight-ready PCB design, and subsystem hardware. From schematic to integrated board — EPS, OBC, ADCS, payload interfaces. Fast quotes, worldwide shipping." />
+  <meta name="keywords" content="CubeSat PCB design, CubeSat avionics, custom satellite PCB, CubeSat EPS, CubeSat OBC, ADCS board, PC/104 CubeSat, smallsat electronics, nanosatellite hardware" />
   <meta name="theme-color" content="#0b1020" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://apogeeavionics.com/" />
 
   <!-- Open Graph / social preview -->
   <meta property="og:title" content="Apogee Avionics — CubeSat Hardware & PCB Design" />
   <meta property="og:description" content="Flight-ready CubeSat avionics and custom PCB design. Get a quote in 24 hours." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://apogeeavionics.com/" />
+  <meta property="og:site_name" content="Apogee Avionics" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Apogee Avionics — CubeSat Hardware & PCB Design" />
+  <meta name="twitter:description" content="Flight-ready CubeSat avionics and custom PCB design. Get a quote in 24 hours." />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data for search engines (rich results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://apogeeavionics.com/#org",
+        "name": "Apogee Avionics",
+        "url": "https://apogeeavionics.com/",
+        "email": "melihakbulut92@gmail.com",
+        "description": "Custom CubeSat avionics and PCB design — EPS, OBC, ADCS, comms, and payload interface boards for 1U–12U CubeSats.",
+        "areaServed": "Worldwide",
+        "knowsAbout": ["CubeSat avionics", "PCB design", "Electrical Power Systems", "On-Board Computers", "Attitude Determination and Control", "PC/104", "IPC standards"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://apogeeavionics.com/#site",
+        "url": "https://apogeeavionics.com/",
+        "name": "Apogee Avionics",
+        "publisher": { "@id": "https://apogeeavionics.com/#org" }
+      },
+      {
+        "@type": "Service",
+        "name": "CubeSat Hardware & Custom PCB Design",
+        "provider": { "@id": "https://apogeeavionics.com/#org" },
+        "serviceType": "CubeSat avionics design and custom PCB engineering",
+        "areaServed": "Worldwide",
+        "description": "Schematic capture, multi-layer PCB layout, CubeSat subsystem boards, prototype assembly, functional test, and design review for 1U–12U CubeSats."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Do I own the design files?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You receive the full source design package — schematics, layout, Gerbers, BOM, and assembly drawings. No vendor lock-in." } },
+          { "@type": "Question", "name": "What is your typical lead time?", "acceptedAnswer": { "@type": "Answer", "text": "You get a fixed-scope quote within one business day. Prototype boards typically take 2–6 weeks depending on complexity and fabrication." } },
+          { "@type": "Question", "name": "Will you sign an NDA?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We routinely work under NDA and treat your mission details and IP as confidential." } },
+          { "@type": "Question", "name": "Which EDA tools and deliverables do you use?", "acceptedAnswer": { "@type": "Answer", "text": "We design in industry-standard tools and deliver a complete fabrication package: schematics, PCB layout source, Gerbers, drill files, BOM, pick-and-place, and a functional test report." } },
+          { "@type": "Question", "name": "How does payment work?", "acceptedAnswer": { "@type": "Answer", "text": "Projects are quoted and invoiced in USD with milestone-based payments — typically a deposit to start and the balance on delivery." } },
+          { "@type": "Question", "name": "Can you support export-controlled or ITAR programs?", "acceptedAnswer": { "@type": "Answer", "text": "We focus on commercial, educational, and research hardware. If your program involves export-controlled or ITAR-regulated items, tell us up front so we can scope it correctly or refer you appropriately." } }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- ===== NAV ===== -->
@@ -34,8 +87,8 @@
       <nav class="nav__links" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#products">Hardware</a>
-        <a href="#process">Process</a>
-        <a href="#why">Why Us</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
         <a class="btn btn--ghost btn--sm" href="#contact">Get a Quote</a>
       </nav>
       <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -214,6 +267,60 @@
     </div>
   </section>
 
+  <!-- ===== PRICING / ENGAGEMENT ===== -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Engagement models</p>
+        <h2>Clear scope, fixed-price quotes</h2>
+        <p class="section__sub">Pick the starting point that fits your mission. Every engagement is quoted up front in USD &mdash; no hourly creep, no surprises.</p>
+      </div>
+
+      <div class="pricing">
+        <article class="tier">
+          <h3 class="tier__name">Design Review</h3>
+          <p class="tier__price"><span>from</span> $1,500</p>
+          <p class="tier__desc">You have a design &mdash; we make sure it works before you spend on fabrication.</p>
+          <ul class="ticks">
+            <li>Schematic &amp; layout audit</li>
+            <li>EMC, thermal &amp; power review</li>
+            <li>Prioritized findings report</li>
+            <li>Respin recommendations</li>
+          </ul>
+          <a class="btn btn--ghost btn--block" href="#contact">Request a quote</a>
+        </article>
+
+        <article class="tier tier--featured">
+          <div class="tier__badge">Most popular</div>
+          <h3 class="tier__name">Custom Subsystem Board</h3>
+          <p class="tier__price"><span>from</span> $4,500</p>
+          <p class="tier__desc">A single flight-ready board &mdash; EPS, OBC, ADCS, comms, or payload interface &mdash; built to your spec.</p>
+          <ul class="ticks">
+            <li>Architecture, schematic &amp; layout</li>
+            <li>Milestone design reviews</li>
+            <li>Prototype build &amp; functional test</li>
+            <li>Full source design package</li>
+          </ul>
+          <a class="btn btn--primary btn--block" href="#contact">Start your project</a>
+        </article>
+
+        <article class="tier">
+          <h3 class="tier__name">Full Avionics Stack</h3>
+          <p class="tier__price">Custom</p>
+          <p class="tier__desc">A complete, integrated CubeSat bus &mdash; multiple subsystems designed to work together.</p>
+          <ul class="ticks">
+            <li>Multi-board stack architecture</li>
+            <li>Backplane &amp; harness design</li>
+            <li>Integration &amp; bring-up support</li>
+            <li>Dedicated project lead</li>
+          </ul>
+          <a class="btn btn--ghost btn--block" href="#contact">Let&rsquo;s talk</a>
+        </article>
+      </div>
+      <p class="pricing__note">Indicative starting prices; final quote depends on layer count, complexity, and quantity. Universities &amp; student teams &mdash; ask about academic pricing.</p>
+    </div>
+  </section>
+
   <!-- ===== PROCESS ===== -->
   <section class="section" id="process">
     <div class="container">
@@ -269,6 +376,48 @@
     </div>
   </section>
 
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Questions, answered</p>
+        <h2>Frequently asked questions</h2>
+        <p class="section__sub">The things teams ask us before starting. Don&rsquo;t see yours? <a class="inline-link" href="#contact">Just ask.</a></p>
+      </div>
+
+      <div class="faq">
+        <details class="faq__item">
+          <summary>Do I own the design files?</summary>
+          <p>Yes. You receive the full source design package &mdash; schematics, PCB layout source, Gerbers, drill files, BOM, and assembly drawings. No vendor lock-in, ever.</p>
+        </details>
+        <details class="faq__item">
+          <summary>What is your typical lead time?</summary>
+          <p>You get a fixed-scope quote within one business day. Prototype boards typically take 2&ndash;6 weeks depending on complexity, layer count, and fabrication queue.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Will you sign an NDA?</summary>
+          <p>Yes. We routinely work under NDA and treat your mission details and IP as strictly confidential. Send yours, or use ours.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Which tools and deliverables do you use?</summary>
+          <p>We design in industry-standard EDA tools and deliver a complete, fab-ready package: schematics, layout source, Gerbers, drill files, BOM, pick-and-place files, and a functional test report.</p>
+        </details>
+        <details class="faq__item">
+          <summary>How does payment work?</summary>
+          <p>Projects are quoted and invoiced in USD with milestone-based payments &mdash; typically a deposit to begin and the balance on delivery. No hidden hourly billing.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Can you support export-controlled or ITAR programs?</summary>
+          <p>We focus on commercial, educational, and research hardware. If your program involves export-controlled or ITAR-regulated items, tell us up front so we can scope it correctly or point you to the right partner.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Can you work with my existing team or contract manufacturer?</summary>
+          <p>Absolutely. We hand off clean, documented design files and can coordinate directly with your CM, or manage fabrication and assembly for you &mdash; your choice.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== CONTACT ===== -->
   <section class="section" id="contact">
     <div class="container contact">
@@ -290,6 +439,10 @@
             <span>Remote engagements worldwide</span>
           </li>
         </ul>
+        <div class="contact__book" id="bookBlock" hidden>
+          <span class="contact__label">Prefer to talk?</span>
+          <a class="btn btn--ghost" id="bookLink" href="#" target="_blank" rel="noopener">Book a 20-min intro call &rarr;</a>
+        </div>
       </div>
 
       <form class="contact__form" id="quoteForm" action="https://formspree.io/f/xbdebwrj" method="POST">
@@ -347,7 +500,8 @@
       <nav class="footer__links" aria-label="Footer">
         <a href="#services">Services</a>
         <a href="#products">Hardware</a>
-        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
       <p class="footer__legal">&copy; <span id="year"></span> Apogee Avionics. All rights reserved.</p>

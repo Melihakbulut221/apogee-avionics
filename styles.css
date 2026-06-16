@@ -141,6 +141,43 @@ img, svg { display: block; }
 .product__cta { color: var(--accent); font-weight: 600; font-size: 15px; transition: gap .2s ease; }
 .product__cta:hover { color: var(--accent-2); }
 
+/* ===== Pricing ===== */
+.pricing { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: start; }
+.tier {
+  position: relative; background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 30px 26px; display: flex; flex-direction: column; gap: 6px;
+}
+.tier--featured { border-color: rgba(91,140,255,.55); background: var(--panel-2); box-shadow: var(--shadow); }
+.tier__badge {
+  position: absolute; top: -12px; left: 26px; font-family: var(--display); font-size: 12px; font-weight: 700;
+  letter-spacing: .06em; color: #06122b; background: var(--accent-grad); padding: 5px 12px; border-radius: 999px;
+}
+.tier__name { font-family: var(--display); font-size: 20px; }
+.tier__price { font-family: var(--display); font-size: 34px; font-weight: 700; line-height: 1.1; margin: 4px 0 6px; }
+.tier__price span { font-family: var(--font); font-size: 14px; font-weight: 500; color: var(--muted); margin-right: 4px; }
+.tier__desc { color: var(--muted); font-size: 15px; margin-bottom: 16px; }
+.tier .ticks { margin-bottom: 24px; }
+.tier .btn { margin-top: auto; }
+.pricing__note { text-align: center; color: var(--muted); font-size: 14px; margin-top: 26px; }
+
+/* ===== FAQ ===== */
+.faq { max-width: 820px; display: flex; flex-direction: column; gap: 12px; }
+.faq__item { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-sm); overflow: hidden; }
+.faq__item summary {
+  list-style: none; cursor: pointer; padding: 20px 24px; font-family: var(--display); font-size: 17px;
+  font-weight: 600; display: flex; justify-content: space-between; align-items: center; gap: 16px; transition: color .15s;
+}
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after { content: "+"; color: var(--accent); font-size: 24px; font-weight: 400; transition: transform .2s ease; }
+.faq__item[open] summary::after { transform: rotate(45deg); }
+.faq__item summary:hover { color: var(--accent); }
+.faq__item p { padding: 0 24px 22px; color: var(--muted); font-size: 15px; }
+.inline-link { color: var(--accent); font-weight: 600; }
+.inline-link:hover { color: var(--accent-2); }
+
+/* ===== Contact booking ===== */
+.contact__book { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+
 /* ===== Steps ===== */
 .steps { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; counter-reset: step; }
 .step { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 24px; }
@@ -196,6 +233,7 @@ img, svg { display: block; }
   .cards { grid-template-columns: repeat(2, 1fr); }
   .products { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(2, 1fr); }
+  .pricing { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; }
   .why { grid-template-columns: 1fr; gap: 32px; }
   .contact { grid-template-columns: 1fr; gap: 32px; }
 }
@@ -205,7 +243,7 @@ img, svg { display: block; }
   .nav__links a { padding: 14px 24px; }
   .nav__links .btn { margin: 8px 24px; }
   .nav__toggle { display: flex; }
-  .cards, .products, .steps { grid-template-columns: 1fr; }
+  .cards, .products, .steps, .pricing { grid-template-columns: 1fr; }
   .why__panel { grid-template-columns: 1fr 1fr; }
   .field--row { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr; }

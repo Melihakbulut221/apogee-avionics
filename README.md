@@ -20,7 +20,18 @@ The site works with a `mailto:` fallback out of the box, but a proper form is be
    `YOUR_FORM_ID` with your real form id.
 4. Done — submissions arrive in your email; the page shows a success message inline.
 
-### 3. (Recommended) Rename the brand
+### 3. (Optional) Add a "Book a call" button
+Create a free [Calendly](https://calendly.com) event, then in **`script.js`** set:
+```js
+const BOOKING_URL = "https://calendly.com/your-name/intro-call";
+```
+The "Book a 20-min intro call" button appears automatically once this is set.
+
+### 4. Edit pricing / packages
+Starting prices in the **Pricing** section of `index.html` (`$1,500` / `$4,500`) are
+indicative placeholders — change them to your real numbers.
+
+### 5. (Recommended) Rename the brand
 Search-and-replace **`Apogee Avionics`** / **`Aered Avionics`** in `index.html` and `404.html`
 with whatever name you choose.
 

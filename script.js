@@ -1,5 +1,8 @@
 // ===== Config: set these to your real contact details =====
 const CONTACT_EMAIL = "melihakbulut92@gmail.com"; // <-- change to your email
+// Optional: paste your Calendly (or other scheduling) link to show a "Book a call"
+// button in the contact section. Leave empty to hide it.
+const BOOKING_URL = ""; // e.g. "https://calendly.com/your-name/intro-call"
 
 // ===== Year =====
 document.getElementById("year").textContent = new Date().getFullYear();
@@ -11,6 +14,16 @@ document.getElementById("year").textContent = new Date().getFullYear();
     link.href =
       "mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent("CubeSat project inquiry");
     link.textContent = CONTACT_EMAIL;
+  }
+})();
+
+// ===== Booking link (shows the "Book a call" button only if BOOKING_URL is set) =====
+(function () {
+  const block = document.getElementById("bookBlock");
+  const link = document.getElementById("bookLink");
+  if (block && link && BOOKING_URL) {
+    link.href = BOOKING_URL;
+    block.hidden = false;
   }
 })();
 
@@ -85,7 +98,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 // ===== Subtle reveal on scroll =====
 (function () {
   if (!("IntersectionObserver" in window)) return;
-  const els = document.querySelectorAll(".card, .product, .step, .why__stat");
+  const els = document.querySelectorAll(".card, .product, .step, .why__stat, .tier");
   els.forEach((el) => {
     el.style.opacity = "0";
     el.style.transform = "translateY(16px)";
